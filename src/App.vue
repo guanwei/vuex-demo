@@ -1,18 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <h1>count: {{ count }}</h1>
+    <div>
+      <button @click="countIncrease">点我</button>
+    </div> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // computed: {
+  //   count () {
+  //     return this.$store.state.count
+  //   }
+  // },
+  // methods: {
+  //   countIncrease () {
+  //     this.$store.commit('countIncrease', 100)
+  //   }
+  // }
 }
 </script>
 
